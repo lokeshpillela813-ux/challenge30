@@ -5,9 +5,9 @@ int main()
 float fuel,cost;
 printf("enter total distance (km):");
 scanf("%f",&distance);
-printf("enter vehicle mileage(km/1):");
+printf("enter vehicle mileage(km/l):");
 scanf("%f",&mileage);
-printf("enter fuel price(Rs/1):");
+printf("enter fuel price(Rs/l):");
 scanf("%f",&price);
 fuel=distance/mileage;
 cost=fuel*price;
