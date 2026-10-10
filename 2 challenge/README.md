@@ -1,4 +1,4 @@
-1. Start
+1.Start
 2. Declare variables distance,mileage,price,fuel and cost
 3. Read the total distance in kilometres
 4. Read the vehicle mileage in kilometers per litre
