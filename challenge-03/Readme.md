@@ -1,6 +1,6 @@
-1 . Start.
-2. Read purchase amount, customer type, and delivery distance.
-3. If customer type is 1:
+ 1 . Start.
+ 2. Read purchase amount, customer type, and delivery distance.
+ 3. If customer type is 1:
    - If purchase amount >= 2000, discount percentage = 15%.
    - Otherwise, discount percentage = 10%.
 4. Else if customer type is 2:
