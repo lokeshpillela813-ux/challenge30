@@ -1,1 +1,110 @@
+#include <stdio.h>
 
+int main()
+{
+    int ch, n, i, fact;
+    float a, b, c, x, d, x1, x2, s;
+
+    while (1)
+    {
+        printf("\n1. Linear Equation");
+        printf("\n2. Factorial");
+        printf("\n3. Quadratic Equation");
+        printf("\n4. Exit");
+        printf("\nEnter choice: ");
+        scanf("%d", &ch);
+
+        if (ch == 1)
+        {
+            printf("Enter a and b: ");
+            scanf("%f %f", &a, &b);
+
+            if (a != 0)
+            {
+                x = -b / a;
+                printf("x = %.2f\n", x);
+            }
+            else if (b == 0)
+            {
+                printf("Infinite solutions\n");
+            }
+            else
+            {
+                printf("No solution\n");
+            }
+        }
+        else if (ch == 2)
+        {
+            printf("Enter n: ");
+            scanf("%d", &n);
+
+            if (n < 0 || n > 12)
+            {
+                printf("Invalid number\n");
+            }
+            else
+            {
+                fact = 1;
+
+                for (i = 1; i <= n; i++)
+                {
+                    fact = fact * i;
+                }
+
+                printf("Factorial = %d\n", fact);
+            }
+        }
+        else if (ch == 3)
+        {
+            printf("Enter a, b and c: ");
+            scanf("%f %f %f", &a, &b, &c);
+
+            if (a == 0)
+            {
+                printf("Not a quadratic equation\n");
+            }
+            else
+            {
+                d = b * b - 4 * a * c;
+
+                if (d > 0)
+                {
+                    s = d / 2;
+
+                    for (i = 0; i < 10; i++)
+                    {
+                        s = (s + d / s) / 2;
+                    }
+
+                    x1 = (-b + s) / (2 * a);
+                    x2 = (-b - s) / (2 * a);
+
+                    printf("Two different real roots\n");
+                    printf("Roots = %.2f and %.2f\n", x1, x2);
+                }
+                else if (d == 0)
+                {
+                    x1 = -b / (2 * a);
+
+                    printf("Equal real roots\n");
+                    printf("Root = %.2f\n", x1);
+                }
+                else
+                {
+                    printf("No real roots\n");
+                }
+            }
+        }
+        else if (ch == 4)
+        {
+            printf("Program ended\n");
+            break;
+        }
+        else
+        {
+            printf("Invalid choice\n");
+        }
+    }
+
+    return 0;
+}
