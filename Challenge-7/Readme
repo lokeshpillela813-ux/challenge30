@@ -1,1 +1,11 @@
-
+1. Start.
+2. Read N. If N is outside 5–15, ask again.
+3. Read N ticket IDs. If any ID is outside 1–N, ask again.
+4. Display the original ticket sequence.
+5. Count each ID's occurrences to find the duplicate and missing IDs.
+6. If the log is invalid, display Invalid scan log and stop.
+7. Use nested loops to count out-of-order pairs.
+8. Read R (last two digits of registration number).
+9. Calculate Target = (R % N) + 1.
+10. Display the target ID, all its positions, and occurrence count.
+11. Stop.
