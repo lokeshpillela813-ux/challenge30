@@ -1,1 +1,13 @@
-
+1. start
+2. Declare arrays for temperature
+3. Display the menu.
+4. Read the user's choice.
+5. If choice is 1, input and validate seven days of data for five zones.
+6. If choice is 2, display all data.
+7. If choice is 3, calculate and display averages.
+8. If choice is 4, detect and display risk days.
+9. If choice is 5, calculate Green Index and display ranking.
+10. If choice is 6, display recommendations.
+11. If choice is 7, exit.
+12. Repeat the menu until the user exits.
+13. Stop.
